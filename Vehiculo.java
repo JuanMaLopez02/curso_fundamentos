@@ -16,7 +16,7 @@ public class Vehiculo
     
     public Vehiculo()
     {
-        tety;
+        
     }
 
     public Vehiculo(String p, String m, String c)
