@@ -1,4 +1,4 @@
-public class Vehiculo
+public class Vehiculo 
 {
     public static Vehiculo[][] vehiculos;
     

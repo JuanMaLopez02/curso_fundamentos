@@ -101,6 +101,17 @@ public class Principal
                 case 7:
                     System.out.println(Sensor.sensoresEstado());
                     break;
+                case 8:
+                    System.out.println("Ingrese el color del vehiculo: ");
+                    String color = entrada2.nextLine();
+                    for(int i = 0; i < Vehiculo.vehiculos.length; i++){
+                       for(int j = 0; j < Vehiculo.vehiculos[0].length; j++){
+                           if(Vehiculo.vehiculos[i][j]!=null && Vehiculo.vehiculos[i][j].getColor().equalsIgnoreCase(color)){
+                               System.out.println(Vehiculo.vehiculos[i][j].toString());
+                           }
+                       }
+                    }
+                    break;
                 default:
                     System.out.println("Comando incorrecto");
                     break;
