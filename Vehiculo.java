@@ -1,3 +1,4 @@
+import java.util.Date;
 public class Vehiculo 
 {
     public static Vehiculo[][] vehiculos;
@@ -14,23 +15,28 @@ public class Vehiculo
     
     private int valorComercial;
     
+    private Date firstDate;
+    
+    private String tipo;
     public Vehiculo()
     {
         
     }
 
-    public Vehiculo(String placa, String marca, String color)
+    public Vehiculo(String placa, String marca, String color, Date firstDate, String tipo)
     {
-        this(placa,marca,color,30000000);
+        this(placa,marca,color,30000000, firstDate, tipo);
     }
     
-    public Vehiculo(String placa, String marca, String color, int valorComercial)
+    public Vehiculo(String placa, String marca, String color, int valorComercial, Date firstDate, String tipo)
     {
         this.placa = placa;
         this.marca = marca;
         this.color = color;
         this.valorComercial = valorComercial;
         this.cantidad = this.cantidad + 1;
+        this.firstDate = firstDate;
+        this.tipo = tipo;
     }
     
     public String getPlaca()
@@ -51,6 +57,16 @@ public class Vehiculo
     public int getValorComercial()
     {
         return valorComercial;
+    }
+    
+    public Date getFirstDate()
+    {
+        return firstDate;
+    }
+    
+    public String getTipo()
+    {
+        return tipo;
     }
     
     public void setTamano(int tamano)
@@ -83,10 +99,21 @@ public class Vehiculo
         this.valorComercial = valorComercial;
     }
     
+    public void setFirstDate(Date firstDate)
+    {
+        this.firstDate = firstDate;
+    }
+    
+    public void setTipo(String tipo)
+    {
+        this.tipo = tipo;
+    }
+    
     public String toString()
     {
-        return placa + " " + marca + " " + color + " " + valorComercial + "\n";
+        return placa + " " + marca + " " + color + " " + valorComercial + " " + firstDate + " " + tipo + "\n";
     }
+    
     public static String toStringVehiculos()
     {
         String vehiculosParqueados = "";
@@ -104,4 +131,5 @@ public class Vehiculo
     {
         return cantidad;
     }
+    
 }

@@ -1,0 +1,9 @@
+#BlueJ class context
+comment0.target=Moto
+comment1.params=placa\ marca\ color\ firstDate\ tipo
+comment1.target=Moto(java.lang.String,\ java.lang.String,\ java.lang.String,\ java.util.Date,\ java.lang.String)
+comment2.params=placa\ marca\ color\ valorComercial\ firstDate\ tipo
+comment2.target=Moto(java.lang.String,\ java.lang.String,\ java.lang.String,\ int,\ java.util.Date,\ java.lang.String)
+comment3.params=
+comment3.target=java.lang.String\ toString()
+numComments=4
